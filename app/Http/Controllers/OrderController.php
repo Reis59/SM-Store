@@ -116,7 +116,10 @@ class OrderController extends Controller
 
     public function invoice(string $order_number)
     {
-        $order = Order::where('order_number', $order_number)->firstOrFail();
+        $order = Order::where('order_number', $order_number)
+            ->orWhere('id', $order_number)
+            ->firstOrFail();
+
         return view('orders.invoice', compact('order'));
     }
 

@@ -80,7 +80,7 @@
                                     </div>
                                     
                                     <div class="d-flex gap-2">
-                                        <a href="#" class="btn btn-sm btn-outline-success rounded-pill px-3 fw-semibold" style="font-size: 12px;">
+                                        <a href="{{ route('order.invoice', ['order_number' => $order->order_number ?? $order->id]) }}" class="btn btn-sm btn-outline-success rounded-pill px-3 fw-semibold" style="font-size: 12px;">
                                             Lihat Detail
                                         </a>
                                         @if(in_array($order->status, ['completed', 'success', 'selesai']))

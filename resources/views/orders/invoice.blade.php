@@ -6,7 +6,7 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col-12">
-                <h1>Invoice Pesanan</h1>
+                <h1>Detail Pesanan</h1>
                 <p>Pesanan Anda telah berhasil dibuat. Simpan nomor pesanan untuk referensi.</p>
                 <div class="card mt-4">
                     <div class="card-body">
