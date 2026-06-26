@@ -1,5 +1,5 @@
 # 1. Menggunakan base image PHP + Nginx yang sudah siap pakai
-FROM richarvey/nginx-php-fpm:latest
+FROM richarvey/nginx-php-fpm:php84
 
 # 2. Mengatur folder kerja utama di dalam container
 WORKDIR /var/www/html
